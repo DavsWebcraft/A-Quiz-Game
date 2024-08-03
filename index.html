@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Quiz Game</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="welcome-screen" class="screen">
+      <div class="welcome-container">
+        <div class="welcome-header">
+          <img
+            src="./images/landing-image.jpg"
+            alt="landing image"
+            class="header-image"
+          />
+        </div>
+        <div class="welcome-content">
+          <h1>Welcome to <span class="highlight">Davz Quiz</span> Academy!</h1>
+          <p>Play, Learn, and Explore with Exciting Quizzes!</p>
+          <div class="button-container">
+            <button class="login-btn">START QUIZ🤗</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="quiz-screen" class="screen hidden">
+      <div class="quiz-container">
+        <header class="quiz-header">
+          <p class="quote">Davz Quiz Academy!</p>
+        </header>
+        <div class="quiz-content">
+          <img src="" alt="Quiz image" class="quiz-image" />
+          <div class="arrows-container">
+            <button id="prev-arrow" class="arrow">&#9664;</button>
+            <p class="question-count">Question 1 of 5</p>
+            <button id="next-arrow" class="arrow">&#9654;</button>
+          </div>
+
+          <h2 class="quiz-question">What is the meaning of DOM?</h2>
+          <div class="quiz-options">
+            <!-- <button class="option-btn">Direct Object Manipulation</button>
+            <button class="option-btn">Document Object Model</button>
+            <button class="option-btn">Display Oriented Manipulation</button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="completion-screen" class="screen hidden">
+      <div class="completion-container">
+        <div class="completion-content">
+          <h1 class="nice">CONGRATULATIONS!</h1>
+          <div class="checkmark-icon">
+            <img src="./images/checkmark-5.jpg" alt="Checkmark" />
+          </div>
+          <div class="points-earned">
+            <p>You scored <span class="points">0 points</span></p>
+          </div>
+          <div class="stars">
+            <img src="./images/star-6.jpg" alt="Star" />
+          </div>
+          <button class="next-stage-btn">Next Stage</button>
+          <button class="play-again-btn">Play Again</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
